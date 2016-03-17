@@ -207,7 +207,7 @@ def showMovies(sSearch = ''):
         sPattern = '<div style="height:[0-9]{3}px;"><a title="" href="([^"]+).+?><img class=.+?src="([^<"]+)".+?<div class="cover_infos_global toh"><div class="cover_infos_title[^>]+><a title="" href=".+?>(.+?)<'
     else:
         #sPattern = '<div style="height:[0-9]{3}px;"><a title="" href="([^"]+?)"[^>]+?><img class="[^"]+?" data-newsid="[^"]+?" src="([^<]+)" width="[0-9]{3}" height="[0-9]{3}" border="0"[^"]+?"Note spectateurs" style="[^"]+?"><img src="[^"]+?" border="0">[^<]+?</div><div style=""><div class="cover_infos_global toh"><div class="cover_infos_title"><a title="" href="[^"]+?"[^>]+?>([^<]+?) <span class="detail_release size_11">'
-        sPattern = '<div style="height:[0-9]{3}px;"><a title="" href="([^"]+?)[^>]+?><img class="[^"]+?" data-newsid="[^"]+?" src="([^<"]+)".+?<div class="cover_infos_global toh"><div class="cover_infos_title"><a title="" href="[^"]+?[^>]+?>([^<]+?) <span class="detail_release size_11">'
+        sPattern = '<div style="height:[0-9]{3}px;"><a title="" href="([^"]+?)"[^>]+?><img class="[^"]+?" data-newsid="[^"]+?" src="([^<"]+)".+?<div class="cover_infos_global toh"><div class="cover_infos_title"><a title="" href="[^"]+?[^>]+?>([^<]+?) <span class="detail_release size_11">'
     
 	#pour faire simple recherche ce bout de code dans le code source de l'url
     #- ([^<]+) je veut cette partie de code mais y a une suite
