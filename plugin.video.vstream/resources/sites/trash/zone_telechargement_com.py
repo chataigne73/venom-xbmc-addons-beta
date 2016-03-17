@@ -202,7 +202,7 @@ def showMovies(sSearch = ''):
     oRequestHandler = cRequestHandler(sUrl) 
     sHtmlContent = oRequestHandler.request() 
     #sHtmlContent = sHtmlContent.replace('<span class="tr-dublaj"></span>', '').replace('<span class="tr-altyazi"></span>','')
-    if 'series' in sUrl or 'documentaires' in sUrl or 'emissions' in sUrl or 'spectacles' in sUrl or 'animes-' in sUrl:
+    if 'series' in sUrl or 'documentaires' in sUrl or 'emissions' in sUrl or 'spectacles' in sUrl or 'animes-' in sUrl or 'genre' in sUrl:
         #sPattern = '<div style="height:[0-9]{3}px;"><a title="" href="([^<>"]+?)" ><img class=.+?src="([^<]+)" width="[0-9]{3}" height="[0-9]{3}" border="0" .+?<div class="cover_infos_global toh"><div class="cover_infos_title"><a title="" href=".+?" >(.+?)<'
         sPattern = '<div style="height:[0-9]{3}px;"><a title="" href="([^"]+).+?><img class=.+?src="([^<"]+)".+?<div class="cover_infos_global toh"><div class="cover_infos_title[^>]+><a title="" href=".+?>(.+?)<'
     else:
